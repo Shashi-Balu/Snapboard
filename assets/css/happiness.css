@@ -1,0 +1,34 @@
+.happiness-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.happiness-text {
+    font-size: 6rem;
+    font-weight: bold;
+    max-width: 39%;
+}
+
+.happiness-img {
+    display: flex;
+    margin-left: -10rem;
+}
+
+.second-img {
+    position: absolute;
+    margin: 10rem;
+}
+
+footer {
+    background-color: #461315;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+    bottom: -2rem;
+    margin-top: 15rem;
+    font-size: 1.2rem;
+    left: -2rem;
+    width: 102.7%;
+}
