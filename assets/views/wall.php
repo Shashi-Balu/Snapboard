@@ -1,3 +1,5 @@
+<?php global $user; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +17,9 @@
         <div class="right-nav">
             <input type="text" class="search" placeholder="Search">
             <img src="assets/img/upload.svg" alt="Upload" class="upload-icon">
-            <h4>Profile</h4>
+            <a href="?editprofile" class="edit-profile">
+                <img class="prof-pic" src="assets/img/<?= $user['profile_picture'] ?>" alt="">
+            </a>
         </div>
     </nav>
 

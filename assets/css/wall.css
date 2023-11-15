@@ -6,6 +6,7 @@
 .right-nav {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .card-container {
@@ -40,6 +41,16 @@
     height: 30px;
     background: none;
     border: 1.5px solid #5f2f1182;
+    padding: 0.5rem;
 
     outline: none;
+}
+
+.edit-profile {
+    text-decoration: none;
+}
+
+.prof-pic {
+    width: 40px;
+    border-radius: 50%;
 }

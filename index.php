@@ -18,21 +18,18 @@ if (isset($_SESSION['Auth'])) {
 //     $follow_suggestions = filterFollowSuggestion();
 // }
 
-// $pagecount = count($_GET);
+$pagecount = count($_GET);
 
 
 //manage pages
-if (isset($_SESSION['Auth']) && $user['ac_status'] == 1) {
+if (isset($_SESSION['Auth']) && !$pagecount) {
     showPage('wall',  ['page-title' => 'Snapboard']);
-} elseif (isset($_SESSION['Auth']) && $user['ac_status'] == 0) {
-
-    showPage('home', ['page-title' => 'Verify your email']);
-    showPage('verify_email');
+} elseif (isset($_SESSION['Auth']) && isset($_GET['editprofile'])) {
+    showPage('edit_profile', ['page_title' => 'Edit Profile']);
+} else {
+    showPage('home', ['page-title' => 'Snapboard']);
 }
-// elseif (isset($_SESSION['Auth']) && isset($_GET['editprofile']) && $user['ac_status'] == 1) {
-//     showPage('wall', ['page_title' => 'Edit Profile']);
-//     showPage('edit_profile');
-// } elseif (isset($_SESSION['Auth']) && isset($_GET['u']) && $user['ac_status'] == 1) {
+//  elseif (isset($_SESSION['Auth']) && isset($_GET['u']) && $user['ac_status'] == 1) {
 //     $profile = getUserByUsername($_GET['u']);
 //     if (!$profile) {
 //         showPage('wall', ['page_title' => 'User Not Found']);

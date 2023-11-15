@@ -1,0 +1,28 @@
+.verify-container {
+    margin: 3rem;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.email {
+    font-size: 1.5rem;
+}
