@@ -1,0 +1,45 @@
+.upload-icon,
+.heart {
+    width: 25px;
+    cursor: pointer;
+}
+.right-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-container {
+    margin: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    padding: 0.6rem;
+    background: #efecdb;
+    box-shadow: 0 10px 50px #5f2f1182;
+    width: 320px;
+    height: fit-content;
+}
+
+.card-img {
+    min-width: 100%;
+    height: auto;
+}
+
+.card-heading {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.search {
+    border: none;
+    width: 400px;
+    height: 30px;
+    background: none;
+    border: 1.5px solid #5f2f1182;
+
+    outline: none;
+}

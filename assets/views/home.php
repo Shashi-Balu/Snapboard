@@ -23,11 +23,8 @@
 <body>
     <div>
         <nav class="nav">
-            <!-- <img src="../img/Snapboard.svg" alt="Snapboard" class="logo"> -->
-            <h2 class="heading" style="font-style: italic;">Snapboard</h2>
             <div class="settings">
                 <h3 class="settings-heading"><span>Signin</span>, <span>Signup</span></h3>
-                <!-- <img src="../img/logo.svg" class="profile" alt="Profile"> -->
             </div>
         </nav>
 
