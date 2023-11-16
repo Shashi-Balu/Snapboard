@@ -1,0 +1,13 @@
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.upload-post {
+    background-color: transparent;
+    color: rgba(95, 47, 17);
+    border: 1px solid #5f2f1182;
+}

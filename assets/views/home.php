@@ -23,6 +23,7 @@
 <body>
     <div>
         <nav class="nav">
+            <h2 class="heading" style="font-style: italic;">Snapboard</h2>
             <div class="settings">
                 <h3 class="settings-heading"><span>Signin</span>, <span>Signup</span></h3>
             </div>

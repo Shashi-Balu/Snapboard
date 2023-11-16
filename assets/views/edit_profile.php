@@ -18,11 +18,9 @@
 <body>
     <nav class="nav">
         <h2 class="heading" style="font-style: italic;">Snapboard</h2>
-        <!-- <div class="right-nav">
-            <input type="text" class="search" placeholder="Search">
-            <img src="assets/img/upload.svg" alt="Upload" class="upload-icon">
-            <h4><a href="?editprofile" class="edit-profile">Profile</a></h4>
-        </div> -->
+        <div class="right-nav">
+            <h4><a href="#" class="logout">Logout</a></h4>
+        </div>
     </nav>
     <div class="container verify-container">
         <div class="form-container login-container">

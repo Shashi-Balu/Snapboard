@@ -1,7 +1,9 @@
 <?php
 
-require_once 'assets/php/functions.php';
 
+require_once 'assets/php/functions.php';
+echo "<pre>";
+print_r(getPost());
 if (isset($_SESSION['Auth'])) {
     $user = getUser($_SESSION['userdata']['id']);
 }
@@ -26,6 +28,8 @@ if (isset($_SESSION['Auth']) && !$pagecount) {
     showPage('wall',  ['page-title' => 'Snapboard']);
 } elseif (isset($_SESSION['Auth']) && isset($_GET['editprofile'])) {
     showPage('edit_profile', ['page_title' => 'Edit Profile']);
+} elseif (isset($_SESSION['Auth']) && isset($_GET['post'])) {
+    showPage('post', ['page_title' => 'Post Images']);
 } else {
     showPage('home', ['page-title' => 'Snapboard']);
 }
