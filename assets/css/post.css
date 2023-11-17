@@ -11,3 +11,19 @@
     color: rgba(95, 47, 17);
     border: 1px solid #5f2f1182;
 }
+
+.post-container {
+    background: #efecdb;
+    box-shadow: 0 10px 50px #5f2f1182;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#post_img {
+    margin: 1rem;
+}
+
+.post-form {
+    margin-left: -5rem;
+}

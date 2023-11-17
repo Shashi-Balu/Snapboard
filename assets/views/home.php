@@ -25,7 +25,6 @@
         <nav class="nav">
             <h2 class="heading" style="font-style: italic;">Snapboard</h2>
             <div class="settings">
-                <h3 class="settings-heading"><span>Signin</span>, <span>Signup</span></h3>
             </div>
         </nav>
 
@@ -105,8 +104,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="container">
         <div class="form-container login-container">
             <h1>Login</h1>
@@ -134,7 +131,6 @@
             </form>
         </div>
     </div>
-
     <div class="happiness-container">
         <div class="happiness-text">Display your Happiness</div>
         <div class="happiness-img">
@@ -146,10 +142,6 @@
     <footer>
         <p>Snapboard by Shashi Balu</p>
     </footer>
-
-
-    <!-- <script src="./assets/js/main.js"></script> -->
-    <!-- <script src="../js/main.js"></script> -->
     <script>
         const moods = ["Moodboard", "Euphoria", "Vision Board", "Imaginative Gallery"];
         const dynamicMoodsContainer = document.getElementById("dynamicMoods");
@@ -184,8 +176,6 @@
                 loopMoods(index);
             }, 4000);
         }
-
-        // Start the loop
         loopMoods(0);
     </script>
 </body>
