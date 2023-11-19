@@ -40,7 +40,8 @@ if (isset($_GET['addpost'])) {
     if ($response['status']) {
         if (createPost($_POST, $_FILES['post_img'])) {
             if (isset($_SESSION['Auth'])) {
-                header("location:../../?wall");
+                // Redirect to the wall page after successfully posting an image
+                header("location:../../");
             } else {
                 header("location:../../");
             }

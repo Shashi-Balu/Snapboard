@@ -53,6 +53,43 @@ global $posts;
 
         </div>
     <?php endif; ?>
+
+    <div class="modal-container" id="modalContainer">
+        <div class="modal-content" id="modalContent">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="Enlarged Preview">
+        </div>
+    </div>
 </body>
+
+<script>
+    const modalContainer = document.getElementById("modalContainer");
+    const modalContent = document.getElementById("modalContent");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
+
+    const cards = document.querySelectorAll(".card-set");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const cardImage = card.querySelector(".card-img");
+            const imageUrl = cardImage.getAttribute("src");
+
+            modalImage.setAttribute("src", imageUrl);
+            modalContainer.style.display = "flex"; /* Change 'block' to 'flex' */
+        });
+    });
+
+    modalClose.addEventListener("click", () => {
+        modalContainer.style.display = "none";
+    });
+
+    modalContainer.addEventListener("click", (event) => {
+        if (event.target === modalContainer) {
+            modalContainer.style.display = "none";
+        }
+    });
+</script>
+
 
 </html>

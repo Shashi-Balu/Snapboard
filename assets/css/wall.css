@@ -25,6 +25,7 @@
     height: fit-content;
     transition: all 2s;
     display: inline-block;
+    cursor: pointer;
 }
 
 .card-img {
@@ -91,4 +92,40 @@
 .card-set:hover .delete {
     transition: all 2s;
     visibility: visible;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-image {
+    max-width: 80%; /* Adjust the maximum width as needed */
+    max-height: 80vh; /* Adjust the maximum height as needed */
+    border: 10px solid #efecdb; /* Border color same as card background */
+    box-shadow: 0 10px 50px #5f2f1182;
+    filter: none;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
